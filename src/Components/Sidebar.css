@@ -1,0 +1,42 @@
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 8px 12px;
+  background: #1e1e2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+
+.sidebar.open {
+  width: 200px;
+}
+
+
+.sidebar.closed {
+  width: 0;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.sidebar label {
+  display: block;
+  margin: 10px 0;
+}

@@ -1,0 +1,56 @@
+.notification-container {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-container button {
+  background: #1e1e2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.notification-popup {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 260px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  padding: 10px;
+  z-index: 100;
+}
+
+
+.notification-popup .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-popup .header button {
+  background: none;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
