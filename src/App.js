@@ -5,14 +5,13 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import { CartProvider } from './Api/CartContext';
+
 import ProtectedRoute from './Api/ProtectedRoute';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <CartProvider>
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/home' element={<ProtectedRoute><Home /></ProtectedRoute>} />
@@ -21,7 +20,6 @@ function App() {
         <Route path='/notification' />
         <Route path='*' element='not found' />
       </Routes>
-      </CartProvider>
     </div>
   );
 }

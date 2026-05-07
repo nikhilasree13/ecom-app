@@ -1,4 +1,4 @@
-import { useCart } from "../Api/CartContext";
+import { useCart } from "../hooks/useCart";
 
 export default function Cards({ products, selectedCategories = [] }) {
 
